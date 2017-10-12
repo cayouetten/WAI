@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Home from './Home';
-import About from './About';
-import Blog from './Blog';
-import Tutorials from './Tutorials';
-import Recipes from './Recipes';
-import Contact from './Contact';
+import Home from './pages/Home';
+import About from './pages/About';
+import Blog from './pages/Blog';
+import Tutorials from './pages/Tutorials';
+import Recipes from './pages/Recipes';
+import Contact from './pages/Contact';
 
 class Content extends Component {
   render() {

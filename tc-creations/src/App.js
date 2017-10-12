@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Navigation from './Navigation';
 import Content from './Content';
 
-import './App.css';
+import './css/App.css';
 
 class App extends Component {
   render() {
