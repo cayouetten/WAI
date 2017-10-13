@@ -1,36 +1,189 @@
+.home-nav-link{
+  font-family: 'Alegreya', serif;
+  font-weight: bold;
+  color: white;
+  text-shadow: -.5px 0 #95989A, 0 .5px #95989A, .5px 0 #95989A, 0 -.5px #95989A, 0 3px 6px black; /*darkest gray*/
+}
+.home-nav-link:hover{
+  color: white;
+  font-size: 125%;
+}
+.block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home-logo{
+  width: 90%;
+}
 #home-block{
-  width: 100vw;
-  min-height: 300px;
-  background-image: url('../images/home-500.png');
+  background: url('../images/home-500.png') no-repeat;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 #about-block{
-  width: 100vw;
-  height: 200px;
-  background-image: url('../images/about-500.png');
+  background: url('../images/about-500.png') no-repeat;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 #blog-block{
-  width: 100%;
-  height: 200px;
-  background-image: url('../images/blog-500.png');
+  background: url('../images/blog-500.png') no-repeat;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 #tutorials-block{
-  width: 100%;
-  height: 200px;
-  background-image: url('../images/tutorials-500.png');
+  background: url('../images/tutorials-500.png') no-repeat;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 #recipes-block{
-  width: 100%;
-  height: 200px;
-  background-image: url('../images/recipes-500.png');
+  background: url('../images/recipes-500.png') no-repeat;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 #contact-block{
-  width: 100%;
-  height: 200px;
-  background-image: url('../images/contact-500.png');
+  background: url('../images/contact-500.png') no-repeat;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Mobile */
+@media (max-width : 600px){
+ .Home{
+    font-size: 44px;
+  }
+  #home-block{
+    min-height: 300px;
+  }
+  .block{
+    min-height: 200px;
+  }
+}
+
+/* Tablet */
+@media (min-width : 600px) and (max-width : 800px){
+  .Home{
+    font-size: 48px;
+  }
+  #home-block{
+    min-height: 400px;
+  }
+  .block{
+    min-height: 300px;
+  }
+}
+
+/* Web */
+@media (min-width : 800px){
+  .Home{
+    font-size: 30px;
+  }
+  #home-logo{
+    width: 75%;
+  }
+  .home-caption{
+    font-family: 'Alegreya', serif;
+    font-size: 14px;
+    font-style: italic;
+    color: white;
+    padding: 2%;
+  }
+  .block{
+    display: flex;
+    flex-direction: column;
+  }
+  #home-blog-tutorials{
+    display: flex;
+  }
+  #home-block{
+    width: 60vw;
+    height: 58vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #home-cap{
+    align-self: flex-end;
+    width: 27%;
+  }
+  #blog-tutorials{
+    display: flex;
+    flex-direction: column;
+  }
+  #blog-block{
+    justify-content: space-between;
+    width: 40vw;
+    height: 29vh;
+  }
+  #blog-link{
+    margin-top: 12vh;
+  }
+  #blog-cap{
+    align-self: flex-start;
+    width: 27%;
+  }
+  #tutorials-block{
+    justify-content: space-between;
+    width: 40vw;
+    height: 29vh;
+  }
+  #tutorials-link{
+    margin-bottom: 12vh;
+  }
+  #tutorials-cap{
+    align-self: flex-end;
+    width: 27%;
+  }
+  #about-contact-recipes{
+    display: flex;
+  }
+  #about-contact{
+    display: flex;
+    width: 60vw;
+    height: 28vh;
+  }
+  #about-block{
+    justify-content: space-between;
+    width: 50%;
+    height: 28vh;
+  }
+  #about-link{
+    margin-bottom: 12vh;
+  }
+  #about-cap{
+    align-self: flex-start;
+    width: 27%;
+  }
+  #contact-block{
+    justify-content: space-between;
+    width: 50%;
+    height: 28vh;
+  }
+  #contact-link{
+    margin-top: 12vh;
+  }
+  #contact-cap{
+    align-self: flex-start;
+    width: 27%;
+  }
+  #recipes-block{
+    justify-content: space-between;
+    width: 40vw;
+    height: 28vh;
+  }
+  #recipes-link{
+    margin-bottom: 10vh;
+  }
+  #recipes-cap{
+    align-self: flex-start;
+    width: 27%;
+  }
 }

@@ -1,0 +1,80 @@
+.About{
+  font-family: 'Alegreya', serif;
+  color: #95989A; /*darkest gray*/
+  text-align: center;
+}
+
+#about-title{
+  background: url('../images/about-500.png') no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 175px;
+  font-weight: bold;
+  color: white;
+  text-shadow: -.5px 0 #95989A, 0 .5px #95989A, .5px 0 #95989A, 0 -.5px #95989A, 0 3px 6px black; /*darkest gray*/
+}
+h1{
+  font-size: 34px;
+  font-weight: bold;
+}
+h2{
+  font-size: 24px;
+  font-style: italic;
+}
+p{
+  text-align: left;
+  font-size: 16px;
+  line-height: 175%;
+}
+#about-content{
+  padding: 1% 10%;
+}
+
+/* Mobile */
+@media (max-width : 600px){
+ .About{
+    font-size: 44px;
+  }
+}
+
+/* Tablet */
+@media (min-width : 600px) and (max-width : 800px){
+  .About{
+    font-size: 48px;
+  }
+  h1{
+    font-size: 36px;
+  }
+  h2{
+    font-size: 26px;
+  }
+  p{
+    font-size: 18px;
+  }
+
+}
+
+/* Web */
+@media (min-width : 800px){
+  .About{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 86vh;
+    font-size: 30px;
+    background: url('../images/about-bkgd.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #about-title{
+    display: none;
+  }
+  #about-content{
+    width: 80vw;
+    padding: 1%;
+    background-color: rgba(256, 256, 256, .9);
+    border: 2px solid #95989A; /*darkest gray*/
+  }
+}
