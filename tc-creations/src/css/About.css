@@ -72,6 +72,8 @@ p{
     display: none;
   }
   #about-content{
+    overflow: scroll;
+    height: 65vh;
     width: 80vw;
     padding: 1%;
     background-color: rgba(256, 256, 256, .9);
