@@ -1,0 +1,81 @@
+.Blog{
+  font-family: 'Alegreya', serif;
+  color: #95989A; /*darkest gray*/
+  text-align: center;
+}
+#blog-title{
+  background: url('../images/blog-500.png') no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 175px;
+  font-weight: bold;
+  color: white;
+  text-shadow: -.5px 0 #95989A, 0 .5px #95989A, .5px 0 #95989A, 0 -.5px #95989A, 0 3px 6px black; /*darkest gray*/
+}
+.post{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 3%;
+  padding: 1%;
+  border: 1px solid #95989A; /*darkest gray*/
+}
+.post-title{
+  margin: 0;
+  font-size: 32px;
+  font-weight: bold;
+}
+.post-date{
+  margin: 0;
+  font-size: 20px;
+  font-style: italic;
+}
+.post-img{
+  width: 100%;
+}
+.post-content{
+  text-align: left;
+  font-size: 16px;
+  line-height: 175%;
+}
+
+/* Mobile */
+@media (max-width : 600px){
+ .Blog{
+    font-size: 44px;
+  }
+}
+
+/* Tablet */
+@media (min-width : 600px) and (max-width : 800px){
+  .Blog{
+    font-size: 48px;
+  }
+  h1{
+    font-size: 36px;
+  }
+  h2{
+    font-size: 26px;
+  }
+  p{
+    font-size: 18px;
+  }
+
+}
+
+/* Web */
+@media (min-width : 800px){
+  .Blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 86vh;
+    font-size: 30px;
+  }
+  #blog-title{
+    display: none;
+  }
+}

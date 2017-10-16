@@ -1,0 +1,16 @@
+.Footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EAEAEA; /*lightest GRAY*/
+}
+.logo{
+  height: 48px;
+}
+
+@media (max-width : 800px){
+  .Footer{
+    bottom: 0; left: 0; position: fixed;
+  }
+}
