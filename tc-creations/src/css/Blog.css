@@ -23,6 +23,9 @@
   padding: 1%;
   border: 1px solid #95989A; /*darkest gray*/
 }
+.full-post{
+  border: none;
+}
 .post-title{
   margin: 0;
   font-size: 32px;
@@ -35,11 +38,17 @@
 }
 .post-img{
   width: 100%;
+  height: 45vh;
 }
 .post-content{
   text-align: left;
   font-size: 16px;
   line-height: 175%;
+}
+.button-img{
+  width: 40px;
+  height: 40px;
+  align-self: flex-end;
 }
 
 /* Mobile */
@@ -63,6 +72,9 @@
   p{
     font-size: 18px;
   }
+  .post-img{
+    height: 55vh;
+  }
 
 }
 
@@ -73,9 +85,54 @@
     justify-content: center;
     align-items: center;
     height: 86vh;
+    margin-top: 60px;
     font-size: 30px;
+    top: 0; left: 0; position: absolute;
+    background-size: cover;
+    background-position: center;
   }
   #blog-title{
     display: none;
+  }
+  .blogPosts{
+    height: 86vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .post{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3%;
+    padding: 1%;
+    background-color: rgba(256, 256, 256, .9);
+    border: 2px solid #95989A; /*darkest gray*/
+  }
+  .post-img{
+    width: 40%;
+    height: 40vh;
+  }
+  .post-content-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 59%;
+    height: 40vh;
+    line-height: 100%;
+  }
+  .pcg-full{
+    width: 99%;
+    height: 75vh;
+    overflow: scroll;
+  }
+  .post-title{
+    margin-bottom: 1%;
+  }
+  .post-date{
+    margin-bottom: 2%;
+  }
+  .post-content{
+    margin: 0;
   }
 }
