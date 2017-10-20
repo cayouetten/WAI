@@ -1,0 +1,17 @@
+.Content{
+  align-self: flex-end;
+}
+/* Mobile & Tablet */
+@media (max-width : 800px){
+  .Content{
+    width: 100vw;
+    margin-bottom: 8%;
+    top: 0; left: 0; position: absolute; z-index: -10;
+  }
+}
+
+@media (min-width : 800px){
+  .Content{
+    width: 100vw;
+  }
+}

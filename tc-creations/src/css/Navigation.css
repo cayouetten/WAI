@@ -1,36 +1,50 @@
-/* COLORS, FONTS */
+/* ALL */
 .Navigation{
+  width: 100vw;
+  height: 60px;
+  
   display: flex;
   align-items: center;
-
-  background-color: #EAEAEA; /*lightest GRAY*/
-
+  justify-content: space-between;
+  
+  background-color: transparent;
+  
   font-family: 'Alegreya', serif;
-  font-size: 24px;
+  
+  top:0;left:0;position:relative;
+  z-index: 10;
 }
 .nav-logo{
-  min-width: 50px;
-  min-height: 50px;
-  margin: 5px 0 5px 5px;
+  width: 50px;
+  height: 50px;
+  padding-left: 10px;
 }
-.nav-list{
-  width: calc(100% - 55px);
+.nav-mobile{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100vw;
+  padding-top: 9px;
+  margin-top: auto;
+  top:0;left:0;position:absolute;
+}
+.nav-menu{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.nav-links-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
   list-style: none;
+  padding: 1%;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-right: 1.75%;
 }
-.nav-list-item{
-  padding: 0 15px;
-}
-.nav-list-item:first-child{
-  padding-left: 0;
-  margin-left: 25px;
-}
-.nav-list-item:last-child{
-  padding-right: 0;
-  margin-right: 80px;
+li{
+  padding: 0 2%;
 }
 a{
   color: #95989A; /*darkest GRAY*/
@@ -44,4 +58,60 @@ a:hover{
 .active{
   color: #ED9D8E; /*PINK*/
   font-weight: bold;
+}
+
+
+/* Mobile */
+@media (max-width : 600px){
+  .Navigation{
+    font-size: 5vw;
+  }
+  .nav-links-list{
+    background-color: white;
+    border: 1px solid;
+    height: 75vh;
+    padding-right: 4vw;
+    padding-left: 4vw;
+  }
+}
+
+/* Tablet */
+@media (min-width : 600px) and (max-width : 800px){
+  .Navigation{
+    font-size: 5vw;
+  }
+  .nav-links-list{
+    background-color: white;
+    border: 1px solid;
+    height: 75vh;
+    padding-right: 4vw;
+    padding-left: 4vw;
+  }
+}
+
+/* Web */
+@media (min-width : 800px){
+  .Navigation{
+    font-size: 24px;
+    background-color: #EAEAEA; /*lightest GRAY*/
+  }
+  .nav-web{
+    width: 100vw;
+    top:0;left:0;position:absolute;
+  }
+  .nav-links-list{
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 1.25%;
+    margin-bottom: 0;
+  }
+  .nav-links-list:first-child{
+    margin-left: 75px;
+  }
+  .nav-links-list:last-child{
+    padding-right: 25px;
+  }
 }
