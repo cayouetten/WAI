@@ -8,6 +8,8 @@ import Tutorials from './pages/Tutorials';
 import Recipes from './pages/Recipes';
 import Contact from './pages/Contact';
 
+import './css/Content.css';
+
 class Content extends Component {
   render() {
     return (
