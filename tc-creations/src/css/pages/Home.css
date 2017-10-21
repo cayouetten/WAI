@@ -1,0 +1,189 @@
+.home-nav-link{
+  font-family: 'Alegreya', serif;
+  font-weight: bold;
+  color: white;
+  text-shadow: -.5px 0 #95989A, 0 .5px #95989A, .5px 0 #95989A, 0 -.5px #95989A, 0 3px 6px black; /*darkest gray*/
+}
+.home-nav-link:hover{
+  color: white;
+  font-size: 125%;
+}
+.block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home-logo{
+  width: 90%;
+}
+#home-block{
+  background: url('../../images/home/home.png') no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#about-block{
+  background: url('../../images/home/about.png') no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#blog-block{
+  background: url('../../images/home/blog.png') no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#tutorials-block{
+  background: url('../../images/home/tutorials.png') no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#recipes-block{
+  background: url('../../images/home/recipes.png') no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#contact-block{
+  background: url('../../images/home/contact.png') no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Mobile */
+@media (max-width : 600px){
+ .Home{
+    font-size: 44px;
+  }
+  #home-block{
+    min-height: 300px;
+  }
+  .block{
+    min-height: 200px;
+  }
+}
+
+/* Tablet */
+@media (min-width : 600px) and (max-width : 800px){
+  .Home{
+    font-size: 48px;
+  }
+  #home-block{
+    min-height: 400px;
+  }
+  .block{
+    min-height: 300px;
+  }
+}
+
+/* Web */
+@media (min-width : 800px){
+  .Home{
+    font-size: 30px;
+  }
+  #home-logo{
+    width: 75%;
+  }
+  .home-caption{
+    font-family: 'Alegreya', serif;
+    font-size: 14px;
+    font-style: italic;
+    color: white;
+    padding: 2%;
+  }
+  .block{
+    display: flex;
+    flex-direction: column;
+  }
+  #home-blog-tutorials{
+    display: flex;
+  }
+  #home-block{
+    width: 60vw;
+    height: 58vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #home-cap{
+    align-self: flex-end;
+    width: 27%;
+  }
+  #blog-tutorials{
+    display: flex;
+    flex-direction: column;
+  }
+  #blog-block{
+    justify-content: space-between;
+    width: 40vw;
+    height: 29.5vh;
+  }
+  #blog-link{
+    margin-top: 12vh;
+  }
+  #blog-cap{
+    align-self: flex-start;
+    width: 27%;
+  }
+  #tutorials-block{
+    justify-content: space-between;
+    width: 40vw;
+    height: 28.5vh;
+  }
+  #tutorials-link{
+    margin-bottom: 12vh;
+  }
+  #tutorials-cap{
+    align-self: flex-end;
+    width: 27%;
+  }
+  #about-contact-recipes{
+    display: flex;
+  }
+  #about-contact{
+    display: flex;
+    width: 60vw;
+    height: 28vh;
+  }
+  #about-block{
+    justify-content: space-between;
+    width: 50%;
+    height: 28vh;
+  }
+  #about-link{
+    margin-bottom: 12vh;
+  }
+  #about-cap{
+    align-self: flex-start;
+    width: 27%;
+  }
+  #contact-block{
+    justify-content: space-between;
+    width: 50%;
+    height: 28vh;
+  }
+  #contact-link{
+    margin-top: 12vh;
+  }
+  #contact-cap{
+    align-self: flex-start;
+    width: 27%;
+  }
+  #recipes-block{
+    justify-content: space-between;
+    width: 40vw;
+    height: 28vh;
+  }
+  #recipes-link{
+    margin-bottom: 10vh;
+  }
+  #recipes-cap{
+    align-self: flex-start;
+    width: 27%;
+  }
+}

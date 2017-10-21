@@ -1,0 +1,117 @@
+.Blog{
+  overflow: scroll;
+}
+#blog-title{
+  background: url('../../images/home/blog.png') no-repeat; background-size: cover;
+  display: flex; justify-content: center; align-items: center;
+  height: 175px;
+  font-size: 8vw; font-weight: bold; color: white; text-shadow: -.5px 0 #95989A, 0 .5px #95989A, .5px 0 #95989A, 0 -.5px #95989A, 0 3px 6px black; /*darkest gray*/
+  
+  border-bottom: 1px dashed #EAEAEA;
+}
+
+/*Mobile & Web List*/
+.blog-list{
+  padding: 3%;
+}
+.blog-list-post{
+  text-align: left;
+  margin-top: 1%; margin-bottom: 1%;
+  padding: 2%;
+  border: 1px dashed #95989A;/*darkest gray*/
+}
+.blog-list-title{
+  font-size: 7vw; font-weight: bold;
+}
+.blog-list-date{
+  font-size: 5vw; font-style: italic;
+}
+.blog-list-img{
+  width: 100%;
+}
+.blog-list-content{
+  font-size: 3vw;
+}
+.blog-button-img{
+  width: 40px; height: 40px;
+  margin-left: Calc(100% - 40px);
+}
+
+/*Mobile & Web Single*/
+.blog-single{
+  padding: 3%;
+}
+.blog-single-post{
+  text-align: left;
+  border: none;
+}
+
+/*Tablet Only*/
+@media (min-width: 600px) and (max-width: 800px){
+  .blog-list-title{
+    font-size: 5vw; font-weight: bold;
+  }
+  .blog-list-date{
+    font-size: 3vw; font-style: italic;
+  }
+  .blog-list-content{
+    font-size: 2vw;
+  }
+}
+
+/*Web Only*/
+@media (min-width: 800px){
+  #blog-title{
+    display: none;
+  }
+  /*List*/
+  .blog-list{
+    display: flex; justify-content: space-between; flex-wrap: wrap;
+    padding: 3%;
+  }
+  .blog-list-post{
+    width: 25vw;
+    max-height: 80vh;
+    text-align: left;
+    margin-top: 1%; margin-bottom: 1%;
+    padding: 2%;
+    border: 1px dashed #95989A;/*darkest gray*/
+  }
+  .blog-list-title{
+    font-size: 3vw; font-weight: bold;
+  }
+  .blog-list-date{
+    font-size: 3vw; font-style: italic;
+  }
+  .blog-list-img{
+    width: 100%;
+    height: 33%;
+  }
+  .blog-list-content{
+    font-size: 1.75vw;
+  }
+  /*Single*/
+  .blog-single{
+    background-size: cover; background-repeat: no-repeat;
+  }
+  .blog-single-post{
+    margin: 5%;
+    background-color: rgba(256, 256, 256, .9);
+    border: 2px solid #95989A; /*darkest gray*/
+  }
+  .blog-single-title{
+    padding: 2%;
+    font-size: 4vw; font-weight: bold;
+  }
+  .blog-single-date{
+    padding: 2%;
+    font-size: 3vw; font-style: italic;
+  }
+  .blog-single-content{
+    padding: 2%;
+  }
+  .blog-button-img{
+    margin-left: Calc(98% - 40px);
+    margin-bottom: 3%;
+  }
+}
